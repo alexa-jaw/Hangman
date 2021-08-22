@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hangman.css" />
+    <title>Hangman</title>
+
+    <script src="hangman.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body onload="start()">
+<h1>Hangman</h1>
+<h2>Guess a programming language</h2>
+
+<div class="text">
+<h3>Try to guess the correct programing language within the guess limit!
+This game is designed for one player who has only seven chances.</div>
+<div class="game">
+    <img id="hangImage" src="0.jpg"/>
+    <br>
+    <input id="letter" type="text">
+    <input type="button" value="letter" onClick="gettingLetter()"/>
+</div>
+<p id="answer"></p>
+<p id="counter">Wrong guesses: <span id="mistakes">0</span> of <span id="maxWrong"> 6 </span></p>
+<p id="stat"></p>
+<button id="reset" onclick="resetFunction()" value="Reset">reset</button>
+</div>
+</body>
+</html>
